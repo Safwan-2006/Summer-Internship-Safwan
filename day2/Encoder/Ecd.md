@@ -26,4 +26,5 @@ The `encoder4to2_tb` evaluates the design by walking a logic high (`1`) through 
 ## 📈 Simulation Waveform
 <img width="1550" height="627" alt="encoder" src="https://github.com/user-attachments/assets/9d426d01-fc98-43f3-b72b-51f685feb26f" />
 
+---
 **Author:** Mohammed Safwan M.
