@@ -28,4 +28,5 @@ The `RIPPLE_CARRY_ADDER_tb` applies a sequence of test vectors with a 100ns dela
 
 <img width="1552" height="690" alt="ripplecarryadder" src="https://github.com/user-attachments/assets/eaec8c3f-06ae-4f2b-8b5d-d465330b3215" />
 
+---
 **Author:** Mohammed Safwan M.
