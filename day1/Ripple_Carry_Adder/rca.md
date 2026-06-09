@@ -25,9 +25,7 @@ The `RIPPLE_CARRY_ADDER_tb` applies a sequence of test vectors with a 100ns dela
 | 400 | `1111` | `1111` | `1` | `1111` | `1` | 15 + 15 + 1 = 31 (Sum=15, Carry=1)|
 
 ## 📈 Simulation Waveform
-*(Upload your simulation result image to your repository and replace the placeholder link below)*
 
-![Simulation Waveform]
 <img width="1552" height="690" alt="ripplecarryadder" src="https://github.com/user-attachments/assets/eaec8c3f-06ae-4f2b-8b5d-d465330b3215" />
 
 **Author:** Mohammed Safwan M.
