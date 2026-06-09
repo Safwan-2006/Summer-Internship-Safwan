@@ -26,5 +26,5 @@ The `dff_tb` module generates a 10ns period clock (toggling every 5ns) and appli
 ## 📈 Simulation Waveform
 <img width="1415" height="685" alt="dff" src="https://github.com/user-attachments/assets/b0ef30ab-b93e-46ce-aee0-d983c9e57816" />
 
-
+---
 **Author:** Mohammed Safwan M.
