@@ -15,7 +15,6 @@ The structural logic in `BCD_ADDER.v` handles this process in two stages:
 ## 📂 File Structure
 * `BCD_ADDER.v` — The top-level module containing the BCD addition and correction logic.
 * `BCD_ADDER_tb.v` — The testbench used to verify the design against various test cases.
-* `RIPPLE_CARRY_ADDER.v` — *(Note: Ensure this dependency file is uploaded to the repository, as the top module instantiates it twice).*
 
 ## 🛠️ Tools & Technologies
 * **Hardware Description Language:** Verilog HDL
