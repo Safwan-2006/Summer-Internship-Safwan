@@ -36,11 +36,4 @@ The testbench (`BCD_ADDER_tb.v`) evaluates the adder using the following sequenc
 ### 📈 Waveform Output
 *(Add your simulation waveform screenshot here)* `![Simulation Waveform](link-to-your-image.png)`
 
-### 💻 Console Output
-When running the simulation, the `$monitor` command outputs the following continuous results:
-```text
-The value of a_tb is 0000 The value of b_tb is 0000 The value of c_tb is 0 The value of sum_tb is 0000 The value of cout_tb is 0
-The value of a_tb is 0010 The value of b_tb is 0011 The value of c_tb is 0 The value of sum_tb is 0101 The value of cout_tb is 0
-The value of a_tb is 0101 The value of b_tb is 0100 The value of c_tb is 0 The value of sum_tb is 1001 The value of cout_tb is 0
-The value of a_tb is 0110 The value of b_tb is 0111 The value of c_tb is 0 The value of sum_tb is 0011 The value of cout_tb is 1
-The value of a_tb is 1000 The value of b_tb is 1000 The value of c_tb is 0 The value of sum_tb is 0110 The value of cout_tb is 1
+
