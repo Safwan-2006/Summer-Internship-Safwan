@@ -3,13 +3,10 @@
 ## 📌 Project Overview
 This repository contains the Verilog RTL design and verification environment for a 4-to-2 Encoder using behavioral modeling. The circuit is designed to compress a 4-bit one-hot input vector ($D_0, D_1, D_2, D_3$) into a 2-bit binary output ($Y_0, Y_1$). In a strict one-hot encoder setup, only one input is actively driven high at any given time.
 
-The theoretical Boolean expressions governing the outputs are:
-$$Y_1 = D_2 + D_3$$
-$$Y_0 = D_1 + D_3$$
 
 ## 📁 File Structure
-* **`encoder4to2.v`**: The main RTL design file implementing the encoder logic. It utilizes a behavioral `always` block and a `case` statement to evaluate the 4-bit input vector and map it to the 2-bit output, including a default state to prevent inferred latches during synthesis.
-* **`encoder4to2_tb.v`**: The testbench module. It programmatically generates one-hot input stimuli using a `for` loop (shifting the active bit leftward: 1, 2, 4, 8) and logs the output responses to the console using `$monitor`.
+* **`Encoder_4by2.v`**: The main RTL design file implementing the encoder logic. It utilizes a behavioral `always` block and a `case` statement to evaluate the 4-bit input vector and map it to the 2-bit output, including a default state to prevent inferred latches during synthesis.
+* **`Encoder_4by2_tb.v`**: The testbench module. It programmatically generates one-hot input stimuli using a `for` loop (shifting the active bit leftward: 1, 2, 4, 8) and logs the output responses to the console using `$monitor`.
 
 ## 🛠️ Tools Used
 * **Hardware Description Language:** Verilog
