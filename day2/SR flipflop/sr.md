@@ -24,5 +24,5 @@ The `sr_ff_tb` module generates a 10ns period clock and tests the flip-flop thro
 
 ## 📈 Simulation Waveform
 <img width="1544" height="682" alt="srff" src="https://github.com/user-attachments/assets/81ca4a70-7182-4260-a012-1872165647a3" />
-
+---
 **Author:** Mohammed Safwan M.
