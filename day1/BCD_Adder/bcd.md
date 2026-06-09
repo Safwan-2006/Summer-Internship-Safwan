@@ -36,4 +36,4 @@ The testbench (`BCD_ADDER_tb.v`) evaluates the adder using the following sequenc
 <img width="1548" height="646" alt="BCDADDER" src="https://github.com/user-attachments/assets/bd93b850-b83d-4e8c-8c88-50b1f24f780a" />
 
 
-
+**Author:** Mohammed Safwan M.
