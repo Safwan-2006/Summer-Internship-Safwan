@@ -3,6 +3,27 @@
 ## 📌 Project Overview
 This repository contains the Verilog RTL design and verification environment for a Finite State Machine (FSM) that detects the binary sequence **"1110"**. The design is implemented as a Mealy state machine with four distinct states (`idle`, `s1`, `s2`, `s3`). The system resets to the `idle` state and outputs a high signal (`detected = 1`) immediately upon detecting the complete "1110" pattern.
 
+## 🔄 State Diagram
+Below is the state transition diagram for the sequence detector. It illustrates the flow between the states based on the input (`din`) and shows the corresponding output (`detected`).
+
+```mermaid
+stateDiagram-v2
+    direction LR
+    [*] --> idle: rst = 1
+    
+    idle --> idle: din = 0 / det = 0
+    idle --> s1: din = 1 / det = 0
+    
+    s1 --> idle: din = 0 / det = 0
+    s1 --> s2: din = 1 / det = 0
+    
+    s2 --> idle: din = 0 / det = 0
+    s2 --> s3: din = 1 / det = 0
+    
+    s3 --> idle: din = 0 / det = 1 (Detected)
+    s3 --> s3: din = 1 / det = 0
+```
+
 ## 📁 File Structure
 * **`seq_detector_1110.v`**: The top-level module implementing the FSM sequence detector logic.
 * **`seq_detector_1110_tb.v`**: The testbench for verifying the functionality of the sequence detector.
