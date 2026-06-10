@@ -6,22 +6,25 @@ This repository contains the Verilog RTL design and verification environment for
 ## 🔄 State Diagram
 Below is the state transition diagram for the sequence detector. It illustrates the flow between the states based on the input (`din`) and shows the corresponding output (`detected`).
 
+## 🔄 State Diagram
+Below is the state transition diagram for the sequence detector. It follows the standard Mealy machine `Input / Output` notation, illustrating the flow between states based on the input (`din`) and the corresponding output (`detected`).
+
 ```mermaid
 stateDiagram-v2
     direction LR
-    [*] --> idle: rst = 1
+    [*] --> idle : rst = 1
     
-    idle --> idle: din = 0 / det = 0
-    idle --> s1: din = 1 / det = 0
+    idle --> idle : 0 / 0
+    idle --> s1 : 1 / 0
     
-    s1 --> idle: din = 0 / det = 0
-    s1 --> s2: din = 1 / det = 0
+    s1 --> s2 : 1 / 0
+    s1 --> idle : 0 / 0
     
-    s2 --> idle: din = 0 / det = 0
-    s2 --> s3: din = 1 / det = 0
+    s2 --> s3 : 1 / 0
+    s2 --> idle : 0 / 0
     
-    s3 --> idle: din = 0 / det = 1 (Detected)
-    s3 --> s3: din = 1 / det = 0
+    s3 --> s3 : 1 / 0
+    s3 --> idle : 0 / 1 (DETECT!)
 ```
 
 ## 📁 File Structure
