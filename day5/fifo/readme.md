@@ -1,4 +1,4 @@
-# 8-Bit Synchronous FIFO in SystemVerilog/Verilog
+# 8-Bit Synchronous FIFO in SystemVerilog
 
 ## 📌 Project Overview
 This repository contains the RTL design and verification environment for an 8-bit wide, depth-8 Synchronous FIFO (First-In-First-Out) memory buffer. The design includes a circular buffer mechanism with automated pointer management, providing `full` and `empty` status flags to prevent data loss. The verification environment utilizes a SystemVerilog `interface` for clean signal bundling and testbench connection.
@@ -8,7 +8,7 @@ This repository contains the RTL design and verification environment for an 8-bi
 * **`fifo_tb.sv`**: The testbench for verifying the FIFO functionality, applying directed stimuli including burst writes and reads.
 
 ## 🛠️ Tools Used
-* **Hardware Description Language:** Verilog / SystemVerilog
+* **Hardware Description Language:**  SystemVerilog 
 * **Simulation & Synthesis:** Xilinx Vivado (or any standard SV-compatible simulator like ModelSim/Questa)
 
 ## 📊 Expected Simulation Results
