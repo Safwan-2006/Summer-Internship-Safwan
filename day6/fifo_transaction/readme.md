@@ -13,9 +13,7 @@ This repository contains a SystemVerilog transaction class (sequence item) and a
 * **Simulation:** Xilinx Vivado (or any standard SystemVerilog simulator like ModelSim/Questa)
 
 ## 📊 Expected Simulation Results (Kernel Log)
-The `tb` module applies boundaries to the `data_in` variable during write operations. Due to the built-in `post_randomize()` function and the explicit `$display` in the loop, each transaction prints twice. 
 
-Notably, constraint `c_4` (`rd_enb -> (data_in == 0)`) is actively working here: whenever a read operation occurs (`RD: 1`), the `DATA_IN` bus is automatically driven to `0`.
 
 Below is the expected TCL console output demonstrating that the constraints are working perfectly:
 
