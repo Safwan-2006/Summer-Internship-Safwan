@@ -35,14 +35,17 @@ class fifo_transaction;
   int max;
   
   // User-defined data boundary constraint
-  constraint c_1 {
+ constraint c_1 {
+  if(wr_enb) {
     data_in > min;
     data_in < max;
   }
+}
+  
   
   // Prevents simultaneous read and write
   constraint c_2 { 
-    !(wr_enb == 1 && rd_enb == 1);
+     wr_enb != rd_enb;
   }
   
   // Ensures active reading and writing
@@ -51,6 +54,9 @@ class fifo_transaction;
     rd_enb dist {1 := 50, 0 := 50};
   }
   
+constraint c_4 {
+  rd_enb -> (data_in == 0);
+}
   
   function void set_boundaries(int min_value, int max_value);
     this.min = min_value;
@@ -68,7 +74,6 @@ class fifo_transaction;
   endfunction  
     
 endclass
-
 module tb;
   
   fifo_transaction tx;
