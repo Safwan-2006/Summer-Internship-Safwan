@@ -25,9 +25,8 @@ The verification environment is built using SystemVerilog classes, structured si
 
 ## 🌊 Simulation Waveforms and Details
 
-*(Note: Upload your waveform screenshot to your repository and name it `waveform.png` to display it below)*
+<img width="1555" height="663" alt="image" src="https://github.com/user-attachments/assets/49994907-93c4-42c0-aeec-d32706be8661" />
 
-![APB Simulation Waveform](./waveform.png)
 
 ### Waveform Analysis
 The simulation demonstrates successful APB protocol compliance across both read and write transactions. The key phases captured in the waveform are:
@@ -49,19 +48,3 @@ The simulation demonstrates successful APB protocol compliance across both read 
 
 ---
 
-## 🚀 How to Run in Vivado
-
-1. Create a new Vivado project and add `apb_slave.v` as a design source and `testbench.sv` as a simulation source.
-2. Open the **Simulation Settings** and ensure the simulator language is set to Mixed or SystemVerilog.
-3. Run the behavioral simulation.
-4. If your transaction signals are not visible by default:
-   * Go to the **Scopes** pane and select `intf` or `dut`.
-   * Drag the necessary signals (`paddr`, `pwdata`, `psel`, `pready`, etc.) into the waveform window.
-   * Click **Restart** (↺) and then **Run All** (▶) to populate the waveforms.
-
-## 📝 Console Output
-The testbench features a self-checking scoreboard that will output the results of the automated tests to the Tcl Console:
-```text
-[Scoreboard] Wrote a178a3d9 to 0000000e
-[Scoreboard] PASS: Read a178a3d9 from 0000000e
-...
