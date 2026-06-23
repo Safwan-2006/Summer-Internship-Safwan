@@ -17,7 +17,8 @@ Data routes sequentially through the core modules as illustrated below:
 
 ## 2. Component Layout and Functional Microarchitecture
 
-<img width="1073" height="486" alt="WhatsApp Image 2026-06-21 at 10 57 46 PM" src="https://github.com/user-attachments/assets/22e699e3-fa9a-4eba-a9c3-d72272b495f9" />
+<img width="1024" height="576" alt="image" src="https://github.com/user-attachments/assets/4f9fcc66-1dd2-434b-9d2a-9673b569e5eb" />
+
 
 
 
